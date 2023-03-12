@@ -1,0 +1,23 @@
+.sunny{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.75));
+    fill: rgb(19, 106, 206);
+    transition: 0.4s ease-out;
+    stroke: black;
+    stroke-width: 0.03em;
+  }
+  
+ .unstable{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.75));
+    fill: rgb(145, 21, 202);
+    transition: 0.4s ease-out;
+    stroke: black;
+    stroke-width: 0.03em;
+  }
+  
+  .rainy{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.75));
+    fill: rgb(255, 153, 238);
+    transition: 0.4s ease-out;
+    stroke: black;
+    stroke-width: 0.03em;
+  }
