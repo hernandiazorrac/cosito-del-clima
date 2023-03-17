@@ -2,15 +2,16 @@ import "./Figure1.css";
 
 const Figure1 = (props) => {
   const { className } = props;
+
   return (
-    <div >
+    <div className="figure">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         xmlns:svgjs="http://svgjs.com/svgjs"
-        width="512"
-        height="512"
+        width="300"
+        height="300"
         x="0"
         y="0"
         viewBox="0 0 64 64"

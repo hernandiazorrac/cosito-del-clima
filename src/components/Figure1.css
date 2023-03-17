@@ -1,23 +1,38 @@
+.figure{
+  border-radius: 100%;
+  height: 250px;
+  width: 250px;
+  box-shadow: -10px 10px rgba(0,0,0,0.2);
+  animation-name: color-change;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
 .sunny{
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.75));
-    fill: rgb(19, 106, 206);
-    transition: 0.4s ease-out;
-    stroke: black;
-    stroke-width: 0.03em;
+    fill: #6b86ca;
+    stroke: rgb(26, 26, 26);
+    stroke-width: 0.05em;
+    transition: 0.8s ease-out;
   }
   
  .unstable{
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.75));
-    fill: rgb(145, 21, 202);
-    transition: 0.4s ease-out;
-    stroke: black;
-    stroke-width: 0.03em;
+    fill: #c877ce;
+    stroke: rgb(26, 26, 26);
+    stroke-width: 0.05em;
+    transition: 0.8s ease-out;
   }
   
   .rainy{
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.75));
-    fill: rgb(255, 153, 238);
-    transition: 0.4s ease-out;
-    stroke: black;
-    stroke-width: 0.03em;
+    fill: #fdafec;
+    stroke: rgb(26, 26, 26);
+    stroke-width: 0.05em;
+    transition: 0.8s ease-out;
   }
+
+
+  /* @keyframes color-change {
+    0% { background-color: rgba(255, 255, 255, 0.7); }
+    50% { background-color: rgba(196, 196, 196, 0.7); }
+    100% { background-color: rgba(255, 255, 255, 0.7); }
+  } */
