@@ -71,17 +71,9 @@ function App() {
               <div className="location">
                 {weather.name}, {weather.sys.country}
               </div>
-              <div className="date">{date.format("LLLL")}</div>
             </div>
 
-            
-              <div className="weatherBox">
-                <div className="temp">
-                  {Math.round(weather.main.temp)}
-                  <sup className="celciusDegrees">°C</sup>
-                </div>
-                <div className="weather">{weather.weather[0].main}</div>
-
+              <div className="figureContainer">
                 <Figure1
                   className={
                     typeof weather.main != "undefined"
@@ -94,13 +86,25 @@ function App() {
                         : weather.weather[0].main == "Clear"
                         ? "sunny"
                         : weather.weather[0].main == "Clouds" ||
-                          weather.weather[0].main == "Mist"
+                          weather.weather[0].main == "Mist" ||
+                          weather.weather[0].main == "Smoke" ||
+                          weather.weather[0].main == "Fog"
                         ? "unstable"
                         : "app"
                       : "app"
                   }
                 />
               </div>
+
+                <div className="weatherContainer">
+                  <div className="temp">
+                    {Math.round(weather.main.temp)}
+                    <sup className="celciusDegrees">°C</sup>
+                  </div>
+                  <img src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} id="icon" />
+                </div>
+
+                
             </div>
           </div>
         ) : (
