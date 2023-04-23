@@ -1,0 +1,104 @@
+.line{
+    border: 1px solid #FFF;
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 1em;
+}
+
+.weatherAndColorContainer{
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+
+.weatherText{
+    display: inline-block;
+    color: #FFF;
+    font-size: 1.7em;
+    font-weight: 400;
+    text-shadow: 3px 3px rgba(50, 50, 70, 0.7);
+}
+
+.weatherColorsSunny{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #6b86ca;
+    margin: .4em;
+    animation: fadeColorsSunny 2s ease-in-out infinite alternate;
+}
+
+.weatherColorsUnstable{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #c877ce;
+    margin: .4em;
+    animation: fadeColorsUnstable 2s ease-in-out infinite alternate;
+}
+
+.weatherColorsRainy{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #fdafec;
+    margin: .4em;
+    animation: fadeColorsRainy 2s ease-in-out infinite alternate;
+}
+
+.colorContainerSunny, .colorContainerRainy, .colorContainerUnstable{
+    display: flex;
+    align-items: center;
+}
+
+@keyframes fadeColorsSunny{
+    0%{
+      background-color: #6b86ca;
+    }
+
+    50%{
+      background-color: #5e77b6;
+    }
+
+    100%{
+      background-color: #6b86ca;
+    }
+  }
+
+
+  @keyframes fadeColorsUnstable{
+    0%{
+      background-color: #c073c5;
+    }
+
+    50%{
+      background-color: #bb5ec2;
+    }
+
+    100%{
+      background-color: #c073c5;
+    }
+  }
+
+
+  @keyframes fadeColorsRainy{
+    0%{
+      background-color: #ffc5f2;
+    }
+
+    50%{
+      background-color: #ffa8ec;
+    }
+
+    100%{
+      background-color: #ffc5f2;
+    }
+  }

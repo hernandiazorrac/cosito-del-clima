@@ -14,69 +14,16 @@
     fill: #6b86ca;
     stroke: rgb(54, 54, 54);
     stroke-width: 0.05em;
-    transition: 0.8s ease-out;
-    animation: fadeColorsSunny 2s ease-in-out infinite alternate;
-    animation-fill-mode: both;
   }
   
  .unstable{
     fill: #c877ce;
     stroke: rgb(54, 54, 54);
     stroke-width: 0.05em;
-    transition: 0.8s ease-out;
-    animation: fadeColorsUnstable 2s ease-in-out infinite alternate;
-    animation-fill-mode: both;
   }
   
   .rainy{
     fill: #fdafec;
     stroke: rgb(54, 54, 54);
     stroke-width: 0.05em;
-    transition: 0.8s ease-out;
-    animation: fadeColorsRainy 2s ease-in-out infinite alternate;
-    animation-fill-mode: both;
-  }
-
-  @keyframes fadeColorsSunny{
-    0%{
-      fill: #6b86ca;
-    }
-
-    50%{
-      fill: #5e77b6;
-    }
-
-    100%{
-      fill: #6b86ca;
-    }
-  }
-
-
-  @keyframes fadeColorsUnstable{
-    0%{
-      fill: #c877ce;
-    }
-
-    50%{
-      fill: #bb5ec2;
-    }
-
-    100%{
-      fill: #c877ce;
-    }
-  }
-
-
-  @keyframes fadeColorsRainy{
-    0%{
-      fill: #fdafec;
-    }
-
-    50%{
-      fill: #cf8ec1;
-    }
-
-    100%{
-      fill: #fdafec;
-    }
   }
